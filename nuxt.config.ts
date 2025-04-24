@@ -2,11 +2,13 @@ import { defineNuxtConfig } from 'nuxt/config';
 
 export default defineNuxtConfig({
   ssr: false,
+
   runtimeConfig: {
     public: {
       kurocoApiDomain: 'https://dev-nuxt-corporate.g.kuroco.app',
     },
   },
+
   app: {
     head: {
       title: 'front_nuxt_corporate',
@@ -43,7 +45,10 @@ export default defineNuxtConfig({
       routes: ['/', '/404.html', '/200.html'],
     },
   },
+
   build: {
     transpile: ['@vuepic/vue-datepicker']
 },
+
+  compatibilityDate: '2025-04-24'
 });
